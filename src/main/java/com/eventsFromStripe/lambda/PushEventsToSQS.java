@@ -38,8 +38,9 @@ public class PushEventsToSQS implements RequestHandler<Object, Object>
 		// TODO Auto-generated method stub
 		System.out.println(input.toString());
 		System.out.println("step-1");
-		String queueUrl = "https://sqs.us-east-1.amazonaws.com/674024469050/stripe-webhooks-queue.fifo";
-		
+		//dev
+	//	String queueUrl = "https://sqs.us-east-1.amazonaws.com/674024469050/stripe-wehooks-queue.fifo";
+		String queueUrl = "https://sqs.us-east-1.amazonaws.com/674024469050/preprod-stripe-webhooks.fifo";	
 	
 		try {
 			  SendMessageRequest send_msg_request = new SendMessageRequest()
